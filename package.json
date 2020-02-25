@@ -7,7 +7,7 @@
     "start": "sucrase-node src/main/server.ts",
     "test": "jest --passWithNoTests --runInBand --detectOpenHandles",
     "test:unit": "npm test -- --watch --silent --noStackTrace -c jest-unit.config.js",
-    "test:integration": "npm test -- --watch -c jest-integration.config.js",
+    "test:integration": "npm test -- --watch --silent --noStackTrace -c jest-integration.config.js",
     "test:staged": "npm test -- --silent --noStackTrace --findRelatedTests",
     "test:ci": "npm test -- --silent --noStackTrace --coverage"
   },
