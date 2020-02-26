@@ -12,7 +12,7 @@ describe('Sginup Routes', () => {
   })
 
   beforeEach(async () => {
-    const accountCollection = MongodbHelper.getCollection('accounts')
+    const accountCollection = await MongodbHelper.getCollection('accounts')
     await accountCollection.deleteMany({})
   })
 
